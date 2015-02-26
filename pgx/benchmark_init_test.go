@@ -7,7 +7,7 @@ func benchReset() {
 	DROP TABLE IF EXISTS benches;
 	CREATE TABLE benches (
 		id SERIAL PRIMARY KEY,
-		amount money,
+		amount float8,
 		image bytea,
 		is_ok boolean,
 		name text,
